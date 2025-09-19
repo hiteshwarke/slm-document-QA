@@ -13,6 +13,13 @@ How to run:
 Notes:
 - This app tries to be CPU friendly but will use CUDA if available.
 - If a model download is large, it may take time on first run.
+A Streamlit app that lets you upload a PDF and ask questions from its content using:
+- Small Language Model (for generation)
+- Sentence-transformers (for embeddings)
+- FAISS (for vector similarity search)
+- LangChain utilities (for document loading and splitting)
+
+This file contains DETAILED comments so it's easy to follow.
 """
 import streamlit as st
 import torch
